@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+
+# 虚拟环境与私密
+.venv/
+venv/
+.env
+.env.*
+
+# 编辑器
+.vscode/
+.idea/
+
+# 临时/日志
+*.log
+*.tmp
+*.cache/
+.DS_Store
+
+# 输出/数据（如将来又创建这些目录）
+outputs/
+results/
+runs/
+checkpoints/
+data/
