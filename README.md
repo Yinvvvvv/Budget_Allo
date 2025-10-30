@@ -1,6 +1,7 @@
 # Data Preprocess for MMLU_Pro
 
-prepare_mmlu_pro.py --split test --out_questions test_questions.jsonl --out_labels test_labels.jsonl
+prepare_mmlu_pro.py --split test --out_questions test_questions.jsonl --out_labels test_labels.jsonl 
+
 prepare_mmlu_pro.py --split validation --out_questions val_questions.jsonl --out_labels val_labels.jsonl
 
 # Load vLLM
