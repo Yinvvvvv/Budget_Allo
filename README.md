@@ -64,6 +64,9 @@ python curve_filtered_from_preds.py \
     --preds fewshot_preds.jsonl \
     --labels test_labels.jsonl \
     --out_csv curve_filtered.csv
+
+# Plot
+python curve_plot.py
 ```
 
 ## 🧩 5. Additional Evaluation Option
