@@ -1,8 +1,8 @@
 # Data Preprocess for MMLU_Pro
 
-prepare_mmlu_pro.py --split test --out_questions test_questions.jsonl --out_labels test_labels.jsonl 
+python prepare_mmlu_pro.py --split test --out_questions test_questions.jsonl --out_labels test_labels.jsonl 
 
-prepare_mmlu_pro.py --split validation --out_questions val_questions.jsonl --out_labels val_labels.jsonl
+python prepare_mmlu_pro.py --split validation --out_questions val_questions.jsonl --out_labels val_labels.jsonl
 
 # Load vLLM
 
@@ -18,6 +18,6 @@ python curve_okg_from_preds.py --preds fewshot_preds.jsonl --out fewshot_preds_o
 
 python curve_filtered_from_preds.py --preds fewshot_preds.jsonl --labels test_labels.jsonl --out_csv curve_filtered.csv
 
-*other option*
+**other option**
 
 python eval.py --pred fewshot_preds.jsonl --label test_labels.jsonl
